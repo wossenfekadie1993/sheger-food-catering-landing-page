@@ -1,0 +1,32 @@
+
+body,main {
+    height: 100%;
+    width: 100%;
+    background-color:black;
+}
+.mainbox{
+    width: 100%;
+    padding: 100px 0  100px ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:22px;
+}
+.mainbox img{
+    width: 100%;
+    height: 330px;
+    cursor: pointer;
+    padding: 0;
+}
+.captions{
+    color:black;
+    font-size: 17px;
+    text-align: center; 
+    background-color:lightcyan;
+    padding-top: 25px;
+    height: 150px;
+}
+@media all and(mai-width-1100){
+    body{
+        background-color: white;
+    }
+}
