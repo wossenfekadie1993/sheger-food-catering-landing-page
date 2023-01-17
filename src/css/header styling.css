@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+   list-style: none;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #24262b;
+    height: 60px;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    border-radius: 50%;
+    height: 3em;
+    margin-left: 17px;
+    margin-top: 3px;
+    
+}   
+.header_list{
+    list-style-type: none;
+    background-color: #24262b;
+    float: right;
+    margin-right: 0;
+}
+.header_list_anchor {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+.header_list_anchor a{
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+.header_list_anchor a:hover{
+    background-color: #f1f1f1;
+    transition: .5s;
+    color:#000;
+}
+.header_list_anchor a.active{
+    background-color: #f1f1f1;
+    transition: .5s;
+    color: #000;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right:40px ;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    .logo{
+        position: absolute;
+        border-radius: 50%;
+        height: 3em;
+        margin-left: 17px;
+        margin-top: 5px;
+        
+    }   
+    .header_list_anchor a{
+        font-size: 16px;
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    .header_list{
+        position: fixed;
+        width:100%;
+        height: 100vh;
+        background-color: #24262b;
+        top: 80px;
+        left: 0;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        padding: 7px;
+    }
+    .header_list_anchor{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .header_list_anchor a{
+        font-size: 20px;
+    }
+    .header_list_anchor a:hover{
+        background:none ;
+        color: lightblue;
+    }
+    .header_list_anchor a.active{
+        background:none ;
+        color: lightblue;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
