@@ -6,76 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHEGER FOOD CATERING </title>
     <link rel="icon" type="image/x-icon" href="../image/logo.PNG">
+    <link rel="stylesheet" href="../css/contact styling.css">
+    <link rel="stylesheet" href="../css/header styling.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="../javascript/script.js"></script>
 </head>
 <body>
     <header>
-        <div>
-        <img src="../image/logo.PNG" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="gallery.html">gallery</a></li>
-                <li><a href="service.html">service</a></li>
-                <li><a href="product.html">product</a></li>
-                <li><a href="pricing.html">pricing</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        </div>     
-    </header>
+        <div class="header">
+            <div >
+               <img src="../image/logo.PNG" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <input type="checkbox" id="check">
+                <label class="checkbtn" for="check"><i class="fa-solid fa-bars"></i></label>
+                <ul class="header_list">
+                    <li class="header_list_anchor"><a href="../html/home.html">Home</a></li>
+                    <li class="header_list_anchor"><a href="../html/about.html">about us</a></li>
+                    <li class="header_list_anchor"><a href="../html/gallery.html">gallery</a></li>
+                    <li class="header_list_anchor"><a href="../html/service.html">service</a></li>
+                    <li class="header_list_anchor"><a href="../html/product.html">product</a></li>
+                    <li class="header_list_anchor"><a href="../html/pricing.html">pricing</a></li>
+                    <li class="header_list_anchor"><a class="active"  href="../html/contact.html">contact</a></li>
+                </ul>
+            </nav>
+        
+        </div>
+            
+</header>
     <main>
-        <div>
-            <section>
+        <div class="main_container">
+        <div class="mainbox">
+            <section class="mainbox_adress">
                 <h1>Get in touch</h1>
-                <img src="../image/phone.png" alt="phone icon">+251912568934
-                <img src="../image/adress.png" alt="adress icon">addis ababa,ethiopia
-                <img src="../image/mail.png" alt="mail icon">sheger.catering@gmail.com
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+251912568934</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>addis ababa,ethiopia</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span >sheger.catering@gmail.com</span>
+                </div>   
             </section>
-            <section>
+            <section class="mainbox_detail">
                 <h1>detail about us</h1>
-                <a href="home.html">home</a>
-                <a href="product.html">our products</a>
-                <a href="pricing.html">our prices</a>
-                <a href="about.html">about us</a>
+                <a href="../html/home.html">home</a>
+                <a href="../html/product.html">our products</a>
+                <a href="../html/pricing.html">our prices</a>
+                <a href="../html/about.html">about us</a>
             </section>
         </div>
-        <div>
-            <section>
+        <div class="mainbox_contact_media">
+            <section class="mainbox_media">
                 <h2>send us a message with</h2>
-                <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><img src="../image/fb.png" alt="facebook icon"></i></a>
-                <a href="https://t.me/FoodCatering"><img src="../image/tele.png" alt="telegram icon"></a>
-                <a href="https://www.instagram.com/howscatering/"><img src="../image/ins.png" alt="instagram icon"></a>
-                <a href="https://www.linkedin.com/company/catering-companies/about/"><img src="../image/lin.png" alt="linkedin icon"></a>
+                <div>
+                    <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://t.me/FoodCatering"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/howscatering/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/catering-companies/about/"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
             </section>
-            <section>
-                <h3>comment</h3>
-                <textarea name="comment" id="comment" placeholder="leave your comment here"></textarea>
-                <button>send</button>
+
+            <section class="mainbox_comment">
+                <form autocomplete="on" id="form" >
+
+                    <div class="input-control">
+                        <label for="userField">Username:</label>
+                        <input id="userField" name="userField "  type="text" placeholder="enter username" >
+                        <small>error message</small>
+                    </div>
+                    
+                    <div class="input-control">
+                        <label  for="emailField">Email:</label>
+                        <input name="emailField" id="emailField" type="email" placeholder="enter email adress">
+                        <small>error message</small>
+
+                    </div>
+                    
+                    <div class="input-control">
+                        <label for="passwordField">password:</label>
+                        <input name="passwordfield" id="passwordField" type="password" placeholder="password" >
+                        <small>error message</small>
+                    </div>
+                    
+                    <label for="comment" >Comment:</label>
+                    <input class="comment" type="text" placeholder="leave your comment here">
+                    <button>Send</button>
+                </form>
             </section>
         </div>
+    </div>
     </main>
-    <footer>
-        <div>
-            <aside>
-                <img src="../image/phone.png" alt="phone icon">+251912568934
-                <img src="../image/adress.png" alt="adress icon">addis ababa,ethiopia
-                <img src="../image/mail.png" alt="mail icon">sheger.catering@gmail.com
-            </aside>                
-            <aside>
-                <a href="about.html">about us</a>
-                <a href="gallery.html">gallery</a>
-                <a href="product.html">watch our products</a>
-                <a href="contact.html">contact us</a>
-            </aside>
-            <aside>
-                <h2>follow us for update </h2>
-                <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><img src="../image/fb.png" alt="facebook icon"></i></a>
-                <a href="https://t.me/FoodCatering"><img src="../image/tele.png" alt="telegram icon"></a>
-                <a href="https://www.instagram.com/howscatering/"><img src="../image/ins.png" alt="instagram icon"></a>
-                <a href="https://www.linkedin.com/company/catering-companies/about/"><img src="../image/lin.png" alt="linkedin icon"></a>
-            </aside>
+    <footer >
+        <div class="footer">
+            <div class="footer_left">
+                <aside>
+                    <div class="footer_left_phone" >
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+251912568934</span>
+                    </div>
+
+                    <div class="footer_left_adress">
+                        <i class="fa-solid fa-house"></i>
+                        <span>addis ababa,ethiopia</span>
+                    </div>
+
+                    <div class="footer_left_mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span >sheger.catering@gmail.com</span>
+                    </div>   
+                </aside>
+            </div>
+
+            <div class="footer_center">
+                <aside >
+                    <a href="../html/about.html">about us</a>
+                    <a href="../html/gallery.html">gallery</a>
+                    <a href="../html/product.html">watch our products</a>
+                    <a href="../html/contact.html">contact us</a>
+                </aside>
+            </div>   
+                  
+            <div class="footer_right">
+                <aside>
+                    <h2>follow us for update </h2>
+                    <div class="footer_right_socialmedia">
+                        <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.me/FoodCatering"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/howscatering/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/catering-companies/about/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </aside>
+            </div>
         </div>       
     </footer>
+    
+   
 </body>
 </html>
