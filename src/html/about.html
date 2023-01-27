@@ -6,29 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHEGER FOOD CATERING</title>
     <link rel="icon" type="image/x-icon" href="../image/logo.PNG">
+    <link rel="stylesheet" href="../webvtt/captions.vtt">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 </head>
-<body>
+<body
+class="bg-image"
+  style="background-image: url('../image/pngtree-milk-tea-pearl-milk-catering-color-contrast-beverages-food-picture-image_1480195.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;">
     <header>
-        <div>
-        <img src="../image/logo.PNG" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="gallery.html">gallery</a></li>
-                <li><a href="service.html">service</a></li>
-                <li><a href="product.html">product</a></li>
-                <li><a href="pricing.html">pricing</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        </div>
-            
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark py-0 fixed-top"  >
+            <a class="navbar-brand" href="#"><img src="../image/logo.PNG" alt="Logo" class="rounded-circle" width="50" height="50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mb-auto  ml-lg-auto">
+                <li class="nav-item  "  >
+                  <a class="nav-link " href="../html/home.html">HOME</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../html/about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="../html/gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/service.html">SERVICE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/product.html">PRODUCT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/pricing.html">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="../html/contact.html">CONTACT US</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <main>
-        <div>
-            <section>
-                <h1>a little about us</h1>
+        <div class="row m-5">
+            <section class="col-lg-6 col-sm-12 col-md-6 ">
+                <p class="h1 mt-5">a little about us</p>
                 <p>
                 Sheger food catering production team can prepare everything from Ethiopian national foods  to variety of
                 breads, cakes, sweets, and celebratory cakes thanks to our highly trained chefs.
@@ -36,25 +62,28 @@
                 We are commited to providing fresh options for our customers.The security of our food is a top priority for us. We place a high premium on implementing food safety and quality standards in all aspects of our business, from our supply chain to our restaurants.we are everywhere in addis ababa.we know organizing events and preparing food is how much tough this is why we are here to less your effort.
                 Call us and think only on the number of person you invite.
                </p>
-            <button><a href="../image/gallery.html">our works</a></button>
+               <button type="button" class="btn btn-secondary "><a class="text-decoration-none text-white" href="../html/gallery.html">our works</a></button>
+         
             </section>
-            <section>
-                <video controls autoplay>
-                    <source src="../video/video_2022-12-27_22-11-14.mp4" type="video/Mp4">
+
+            <section class="col-lg-6 col-sm-12 col-md-6 mt-5">
+            
+                <video class="mt-5" controls width="100%" height="auto" >
+                    <source src="../video/video.mp4" type="video/Mp4">
                     <track label="Englsh" kind="captions" srclang="Englsh" src="../webvtt/captions.vtt"  default />
                 </video>
             </section>
         </div>
 
-        <div>
-            <section>
-                    <a href="pricing.html">watch the affordable prices</a>
-                    <a href="service.html">available service</a>
-                    <a href="contact.html">contact us</a>
+        <div class="row m-5">
+            <section class="col-lg-6 col-sm-12 col-md-6 d-flex flex-column text-sm-center">
+                    <a class="text-danger text-decoration-none" href="../html/pricing.html">watch the affordable prices</a>
+                    <a class="text-decoration-none text-danger" href="../html/service.html">available service</a>
+                    <a class="text-danger text-decoration-none" href="../html/contact.html">contact us</a>
             </section>
-            <section>
-                <h4>our service is mainly for</h4>
-                <ol>
+            <section class="col-lg-6 col-sm-12  col-md-6 h4 ">
+                <p class="text-capitalize p-3 h3 text-info">our service is mainly for</p>
+                <ol style="list-style-type: none;">
                     <li>events </li>
                     <li>wedding ceremony</li>
                     <li>birth day ceremony</li>
@@ -64,27 +93,53 @@
         </div>
         
     </main>
-    <footer>
-        <div>
-            <aside>
-                <img src="../image/phone.png" alt="phone icon">+251912568934
-                <img src="../image/adress.png" alt="adress icon">addis ababa,ethiopia
-                <img src="../image/mail.png" alt="mail icon">sheger.catering@gmail.com
-            </aside>                
-            <aside>
-                <a href="about.html">about us</a>
-                <a href="gallery.html">gallery</a>
-                <a href="product.html">watch our products</a>
-                <a href="contact.html">contact us</a>
-            </aside>
-            <aside>
-                <h2>follow us for update </h2>
-                <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><img src="../image/fb.png" alt="facebook icon"></i></a>
-                <a href="https://t.me/FoodCatering"><img src="../image/tele.png" alt="telegram icon"></a>
-                <a href="https://www.instagram.com/howscatering/"><img src="../image/ins.png" alt="instagram icon"></a>
-                <a href="https://www.linkedin.com/company/catering-companies/about/"><img src="../image/lin.png" alt="linkedin icon"></a>
-            </aside>
-        </div>       
+<footer class=" bg-dark text-white position-static ">
+        <div class="container text-center text-md-left">
+            <div class="row text center text-md-left">
+                <div class="col-md-6 col-lg-4 col-xl-4 col-sm-12 mx-auto mt-3">
+                        <div>
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+251912568934</span>
+                        </div>
+    
+                        <div >
+                            <i class="fas fa-house mr-3" ></i>
+                            <span>addis ababa,ethiopia</span>
+                        </div>
+    
+                        <div >
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span >sheger.catering@gmail.com</span>
+                        </div> 
+                </div>
+                
+                <div class="col-md-6 col-lg-4 col-xl-4 col-sm-12 mx-auto mt-2">
+                    <aside class="d-flex flex-column bd-highlight mb-1" >
+                        <a class="text-uppercase text-white mb-2 text-decoration-none"href="../html/about.html">about us</a>
+                        <a class="text-uppercase text-white mb-2 text-decoration-none" href="../html/gallery.html">gallery</a>
+                        <a class="text-uppercase text-white mb-2 text-decoration-none" href="../html/product.html">watch our products</a>
+                        <a class="text-uppercase text-white mb-2 text-decoration-none"  href="../html/contact.html">contact us</a>
+                    </aside>
+                </div>   
+                  
+                <div class="col-md-12 col-lg-4 col-xl-4 col-sm-12 mx-auto mt-3">
+                    <aside >
+                        <p class=" text-uppercase font-weight-bold text-info">follow us for update </p>
+                        <div class="footer_right_socialmedia">
+                            <a href="https://m.facebook.com/251FoodsCatering/photos/a.1030771704047921/1482513832207037/"><i class="fab fa-facebook  text-secondary"></i></a>
+                            <a href="https://t.me/FoodCatering"><i class="fab fa-telegram text-secondary"></i></a>
+                            <a href="https://www.instagram.com/howscatering/"><i class="fab fa-instagram text-secondary"></i></a>
+                            <a href="https://www.linkedin.com/company/catering-companies/about/"><i class="fab fa-linkedin text-secondary"></i></a>
+                        </div>
+                    </aside>
+                </div>
+           </div>  
+        </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 </html>
